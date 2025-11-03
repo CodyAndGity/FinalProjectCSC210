@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Prism&display=swap');
+
+body{
+
+    
+    font-family: Quantico,Audiowide;
+    color: cyan;
+    background-color:#1900ff;
+    margin-left: 100px;
+    margin-bottom: 200px;
+
+}
+/* unvisited link */
+a:link {
+  color: #C4FF55;
+}
+
+/* visited link */
+a:visited {
+  color: #67FFAE;
+}
+
+/* mouse over link */
+a:hover {
+    color: #F1FFF0;
+}
+
+/* selected link */
+a:active {
+    color: #57FF58;
+}
+
+img,iframe{
+    width:400px;
+    margin:50px 0px 60px 100px;
+}
+h1{
+    color:#02FF01;
+}
+h2{
+    color:#00FF8B
+}
+p{
+    color:#BDFF00;
+}
+header{
+    display: inline-block;
+}
+footer, header{
+    font-size: large;
+}
+/*Lists don't work well with just a text align*/
+.align{
+    text-align: center;
+}
+

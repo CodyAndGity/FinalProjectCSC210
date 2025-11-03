@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Prism&display=swap');
+
+body{
+
+    
+    font-family: Audiowide,Quantico;
+    color: #EFBC00;
+    background-image: url(Images/nyan_cat.gif);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: 10%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+
+    
+
+}
+img,iframe{
+    height:40%;
+    margin:10% 0% 15% 15%;
+}
+
+h1{
+    color:#00EF4D;
+}
+h2{
+    color:#72D600;
+}
+p{
+    color:#b0ff70;
+}
+
+header{
+    display: inline-block;
+}
+footer, header{
+    font-size: large;
+}
+/*Lists don't work well with just a text align*/
+.align{
+    text-align: center;
+}
+/* unvisited link */
+a:link {
+  color: #00CAF0;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(156, 209, 252);
+}
+
+/* mouse over link */
+a:hover {
+    color: #01F4F0;
+}
+
+/* selected link */
+a:active {
+    color: #53FA58;
+}
