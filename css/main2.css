@@ -7,10 +7,10 @@ body{
     
     font-family: Audiowide,Quantico;
     color: #EFBC00;
-    background-image: url(Images/nyan_cat.gif);
+    background-image: url(../Images/northern_lights.avif);
     background-attachment: fixed;
-    background-size: 100%;
-    background-repeat: repeat-y;
+    background-size: cover;
+    background-repeat: repeat-x;
     background-position: 10%;
     margin-left: 20%;
     margin-bottom: 10%;
