@@ -11,11 +11,9 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat-x;
-    background-position: 10%;
     margin-left: 20%;
-    margin-bottom: 10%;
-    margin-top: 5%;
-
+    
+    text-shadow:  2px 2px 10px rgb(0, 0, 0);
     
 
 }
@@ -24,14 +22,12 @@ img,iframe{
     margin:10% 0% 15% 15%;
 }
 
-h1{
+h1,h2{
     color:#00EF4D;
 }
-h2{
-    color:#72D600;
-}
+
 p{
-    color:#b0ff70;
+    color:#a1fff4;
 }
 
 header{
@@ -51,7 +47,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: rgb(156, 209, 252);
+  color: rgb(0, 255, 55);
 }
 
 /* mouse over link */
@@ -61,5 +57,5 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: #53FA58;
+    color: #eeff00;
 }
