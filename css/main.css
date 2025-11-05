@@ -5,46 +5,37 @@
 body{
 
     
-    font-family: Quantico,Audiowide;
-    color: cyan;
-    background-color:#1900ff;
-    margin-left: 100px;
-    margin-bottom: 200px;
+    font-family: Audiowide,Quantico;
+    color: #9FFFCF;
+    background-image: url(../Images/northern_lights_cropped.png);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: repeat;
+    margin-left: 20%;
+    
+    text-shadow:  2px 2px 10px rgb(0, 0, 0);
 
 }
-/* unvisited link */
-a:link {
-  color: #C4FF55;
-}
+ul,ol{
+    
+    list-style-image: url('../Images/arrow_small.png');
+    list-style-position: inside;
+    list-style-type:square ;
 
-/* visited link */
-a:visited {
-  color: #67FFAE;
 }
-
-/* mouse over link */
-a:hover {
-    color: #F1FFF0;
-}
-
-/* selected link */
-a:active {
-    color: #57FF58;
-}
-
 img,iframe{
-    width:400px;
-    margin:50px 0px 60px 100px;
+    height:40%;
+    margin:10% 0% 15% 15%;
 }
-h1{
-    color:#02FF01;
+
+h1,h2{
+    color:#00EF4D;
 }
-h2{
-    color:#00FF8B
-}
+
 p{
-    color:#BDFF00;
+    color:#a1fff4;
 }
+
 header{
     display: inline-block;
 }
@@ -55,4 +46,22 @@ footer, header{
 .align{
     text-align: center;
 }
+/* unvisited link */
+a:link {
+  color: #00CAF0;
+}
 
+/* visited link */
+a:visited {
+  color: rgb(0, 255, 55);
+}
+
+/* mouse over link */
+a:hover {
+    color: #01F4F0;
+}
+
+/* selected link */
+a:active {
+    color: #eeff00;
+}
