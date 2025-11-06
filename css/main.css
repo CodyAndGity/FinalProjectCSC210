@@ -11,10 +11,18 @@ body{
     background-attachment: fixed;
     background-size:cover;
     background-repeat: repeat;
-    margin-left: 20%;
-    
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-size: 20px;
+    letter-spacing: 1px;
     text-shadow:  2px 2px 10px rgb(0, 0, 0);
 
+}
+
+p{
+    font-size: larger;
+    letter-spacing: 1px;
 }
 ul,ol{
     
@@ -23,11 +31,31 @@ ul,ol{
     list-style-type:square ;
 
 }
+table{
+    text-align: center;
+    border: 3px solid #00f7ff;
+    border-radius: 20px;
+    border-collapse: collapse;
+    margin-left:9%;
+
+}
+th,td{
+    border: 2px solid #00ffbf;
+    padding: 10px,10px,10px,10px;
+    border-radius: 10px;
+
+}
 img,iframe{
-    height:40%;
+    height:60%;
     margin:10% 0% 15% 15%;
 }
-
+video{
+    max-width: 600px; 
+    max-height: fit-content;
+}
+div.tablecontainer {
+    overflow-x: auto;
+}
 h1,h2{
     color:#00EF4D;
 }
@@ -39,6 +67,13 @@ p{
 header{
     display: inline-block;
 }
+footer{
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 2%;
+    border-top: 2px solid #00f7ff;
+    padding-top: 1%;    
+}
 footer, header{
     font-size: large;
 }
@@ -46,14 +81,33 @@ footer, header{
 .align{
     text-align: center;
 }
+/* Thanks to ChatGPT for helping with centering this nav bar code */
+/* Center navigation lists horizontally and make them inline */
+header nav {
+    text-align: center; /* center the inline-block UL */
+}
+
+header nav ul {
+    display: inline-block; /* shrink to content so centering works */
+    margin: 0; /* remove default left indent */
+    padding-left: 0; /* remove browser default padding */
+    list-style-position: inside;
+}
+
+header nav ul li {
+    display: inline-block; /* place links horizontally */
+    margin: 0 12px; /* spacing between items */
+}
+/*End nav bar centering code */
+
 /* unvisited link */
 a:link {
-  color: #00CAF0;
+    color: #00CAF0;
 }
 
 /* visited link */
 a:visited {
-  color: rgb(0, 255, 55);
+    color: #16ff16;
 }
 
 /* mouse over link */
@@ -63,5 +117,5 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: #eeff00;
+    color: #8ba2ff;
 }

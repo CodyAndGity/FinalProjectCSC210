@@ -6,61 +6,33 @@ const image = document.getElementById("image");
 
 //TODO: Get Better images
 let images = [
-  "Images/northern_lights.avif",
-  "Images/nyan_cat.gif",
-  "Images/programming.png",
-  "Images/AI_pixil_art.png",
+    "Images/programming.png",
+    "Images/Project_media/rock_model_front.png",
+    "Images/hollow_knight.webp",
+    "Images/AI_pixil_art.png",
+    "Images/Project_media/phong_lighting.png",
+    "Images/satstifactory.webp"
+];
+let images_alt = [
+    "a screen full of code",
+    "a 3D model of a rock",
+    "Hollow Knight artwork",
+    "an AI-generated pixel art image",
+    "a demonstration of Phong lighting in a 3D engine",
+    "a screenshot of the game Satisfactory"
 ];
 let index=0;
-//setInterval(function() {element.innerHTML += "Hello"}, 1000);
+
 if (image) {
-  setInterval(function () {
+    setInterval(function () {
     image.src = images[index];
+    image.alt = images_alt[index];
     index++;
     index = index % images.length;
   }, 3000); // change every 3s for readability
 }
 
-fetch('https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/today')
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById('quote').textContent = '"' + data[0].q + '"';
-        document.getElementById('author').textContent = '— ' + data[0].a;
-    });
 
 
-    // const api_url = "https://zenquotes.io/api/quotes/";
-    // //Ai improved quote api
-    // async function getapi(url) {
-    //     try {
-    //         const response = await fetch(url);
-    //         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    //         const data = await response.json();
-    //         console.log("quotes api response:", data);
 
-    //         const quoteEl = document.getElementById("quote");
-    //         if (!quoteEl) return; // nothing to show
-
-    //         if (Array.isArray(data) && data.length > 0) {
-    //         // ZenQuotes returns objects like { q: "quote text", a: "author" }
-    //         const first = data[0];
-    //         const text = first.q || first.quote || JSON.stringify(first);
-    //         const author = first.a || first.author || "Unknown";
-    //         quoteEl.innerText = `"${text}" — ${author}`;
-    //         } else if (data && typeof data === "object") {
-    //         // some endpoints return a single object
-    //         const text = data.q || data.quote || JSON.stringify(data);
-    //         const author = data.a || data.author || "Unknown";
-    //         quoteEl.innerText = `"${text}" — ${author}`;
-    //         } else {
-    //         quoteEl.innerText = "No quote available.";
-    //         }
-    //     } catch (err) {
-    //         console.error("Failed to fetch quote:", err);
-    //         const quoteEl = document.getElementById("quote");
-    //         if (quoteEl) quoteEl.innerText = "Could not load quote.";
-    //     }
-    // }
-
-    // // Trigger fetching the quote. Script is loaded at end of body so DOM elements exist.
-    // getapi(api_url);
+    
